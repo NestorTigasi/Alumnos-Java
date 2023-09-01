@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 async function cargarAlumnos(){
 
-  const request = await fetch('alumnos', {
+  const request = await fetch('api/alumnos', {
     method: 'GET',
     headers: {
       'Accept': 'application/json',

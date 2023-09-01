@@ -1,76 +1,40 @@
 package com.proyectojava.gestion.models;
 
+import jakarta.persistence.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name="alumnos")
+@ToString @EqualsAndHashCode
 public class Alumno {
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter @Setter @Column(name="id")
+    private Long id;
+
+    @Getter @Setter @Column(name="nombre")
     private String nombre;
+
+    @Getter @Setter @Column(name="apellido")
     private String apellido;
+
+    @Getter @Setter @Column(name="cedula")
     private String cedula;
+
+    @Getter @Setter @Column(name="correo")
     private String correo;
+
+    @Getter @Setter @Column(name="celular")
     private String celular;
+
+    @Getter @Setter @Column(name="ciudad")
     private String ciudad;
+
+    @Getter @Setter @Column(name="contrasenia")
     private String contrasenia;
 
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getCelular() {
-        return celular;
-    }
-
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
-
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
-
-    public String getContrasenia() {
-        return contrasenia;
-    }
-
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
-    }
 }
