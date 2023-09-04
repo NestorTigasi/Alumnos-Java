@@ -22,4 +22,10 @@ public class AlumnoDaoImp implements AlumnoDao{
         String query="FROM Alumno";
         return entityManager.createQuery(query).getResultList();
     }
+
+    @Override
+    public void eliminar(Long id) {
+        Alumno alumno= entityManager.find(Alumno.class, id);
+        entityManager.remove(alumno);
+    }
 }

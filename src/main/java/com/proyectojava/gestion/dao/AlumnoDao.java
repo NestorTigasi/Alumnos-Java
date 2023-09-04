@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface AlumnoDao {
     List<Alumno> getAlumno();
+
+    void eliminar(Long id);
 }
