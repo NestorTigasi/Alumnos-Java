@@ -220,42 +220,63 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Gestión de alumnos</h1>
-                    <p class="mb-4">En este apartado se puede listar, eliminar, buscar alumnos</p>
+                    <h1 class="h3 mb-2 text-gray-800">Ingresar Alumno</h1>
+                    <p class="mb-4">Ingrese los datos del nuevo alumno</p>
 
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Alumnos</h6>
-                            <div class="col-sm-2">
-                                <a href="ingresarAlumno.html" class="btn btn-primary btn-user btn-block">
-                                    + Nuevo alumno
+                    <!-- formulario -->
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-4 mb-2 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="nombre"
+                                       placeholder="Nombre">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-user" id="apellido"
+                                       placeholder="Apellido">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-user" id="cedula"
+                                       placeholder="Cédula">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-4 mb-2 mb-sm-0">
+                                <input type="password" class="form-control form-control-user"
+                                       id="celular" placeholder="Celular">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control form-control-user"
+                                       id="ciudad" placeholder="Ciudad">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control form-control-user"
+                                       id="contrasenia" placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-user" id="correo"
+                                   placeholder="Correo">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 mb-1 mb-sm-0">
+                                <a href="#" class="btn btn-primary btn-user btn-block">
+                                    Ingresar
                                 </a>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="alumnos" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>cedula</th>
-                                            <th>Correo</th>
-                                            <th>Celular</th>
-                                            <th>Ciudad</th>
-                                            <th>Contraseña</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                            <div class="col-sm-2">
 
-                                    </tbody>
-                                </table>
+                                <a href="alumnos.html" class="btn btn-danger btn-user btn-block">
+                                        Cancelar
+                                </a>
+
                             </div>
+
                         </div>
-                    </div>
+
+
+
+                    </form>
 
                 </div>
                 <!-- /.container-fluid -->
