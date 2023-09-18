@@ -28,4 +28,9 @@ public class AlumnoDaoImp implements AlumnoDao{
         Alumno alumno= entityManager.find(Alumno.class, id);
         entityManager.remove(alumno);
     }
+
+    @Override
+    public void registrarAlumno(Alumno alumno) {
+        entityManager.merge(alumno);
+    }
 }
